@@ -45,6 +45,7 @@ header {
     width: 80px;
     height: 40px;
     background-color: rgb(39, 38, 38);
+    box-shadow: -10px 15px 20px rgb(50 50 50/ 25%);
     border-radius: 20px;
     position: relative;
 }
@@ -86,6 +87,8 @@ header {
 }
 .main {
     height: 80vh;
+    display: flex;
+    flex-direction: row;
 }
 .main-text {
     padding: 30px;
@@ -125,6 +128,12 @@ header {
     display: flex;
     flex-wrap: wrap;
 }
+.hero-image {
+    position: relative;
+    width: 50%;
+    height: 350px;
+}
+
 
 footer {
     display: flex;
@@ -146,3 +155,4 @@ footer {
         height: 600px;
     }
 }
+

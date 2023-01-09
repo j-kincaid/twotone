@@ -47,17 +47,18 @@ header {
     background-color: rgb(39, 38, 38);
     box-shadow: -10px 15px 20px rgb(50 50 50/ 25%);
     border-radius: 20px;
+    transition: 4s;
     position: relative;
 }
 .flicker {
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(251, 246, 212);
     position: absolute;
     top: 5px;
     left: 5px;
-    transition: 0.3s;
+    transition: 4s;
     box-shadow: 
         inset 4px 4px 4px rgb(255,255,255),
         inset -4px -4px 4px rgb(195 193 198 / 90%);
@@ -65,35 +66,41 @@ header {
 
 .dark {
     background-color: rgb(57, 57, 57);
-    transition: 0.3s;
+    transition: 4s;
 }
 
 .moon {
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    box-shadow: 4px 4px 0 0 rgb(208, 243, 254);
     position: absolute;
+    transition: 3s;
     top: 5px;
     left: 45px;
 }
 
 .dark .flicker {
     transform: translateX(40px);
+    transition: 4s;
 }
 
 .dark > * {
     color: rgb(255, 255, 255);
+    transition: 4s;
 }
-.main {
-    height: 80vh;
+nav {
     display: flex;
     flex-direction: row;
 }
-.main-text {
-    padding: 30px;
-}
 
+ul {
+    list-style: none;
+    flex-wrap: wrap;
+}
+ul li  {
+    justify-content: flex-start;
+}
 .square {
     width: 98%;
     margin: 1%;
@@ -146,9 +153,6 @@ footer {
     background-color: rgb(57, 57, 57);
 }
 @media only screen and (min-width: 970px) {
-    .main-text {
-        width: 50%;
-    }
     .square {
         width: 48%;
         margin: 1%;
